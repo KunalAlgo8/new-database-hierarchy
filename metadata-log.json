@@ -1,10 +1,10 @@
 {
   "mes.smartgateplus.dbo.setup_change_data": {
     "machine": {
-      "name": "kunal",
+      "name": "",
       "location": "",
       "line": "",
-      "owner": "",
+      "owner": "Kunal",
       "sourceType": "",
       "refresh": "",
       "criticality": "",
@@ -75,6 +75,6 @@
         "example": ""
       }
     ],
-    "updated_at": "12/01/2026, 14:17:36"
+    "updated_at": "12/01/2026, 15:04:11"
   }
 }
