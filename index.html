@@ -1616,11 +1616,6 @@
             }
         });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            initializeTree();
-            initializeTooltips();
-        });
-
 
         async function loadMetadataLog() {
          const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${FILE_PATH}`;
@@ -1638,6 +1633,35 @@
             initializeTooltips();
             loadMetadataLog();   // 👈 add this line
         });
+    function openMetaForTable(treeItem) {
+  const path = getNodePath(treeItem).join(".");
+  currentMetaTable = path;
+
+  document.getElementById("metaTableName").innerText = path;
+
+  const meta = metadataLog[path];
+  document.getElementById("metaOwner").value = meta?.owner || "";
+  document.getElementById("metaRefresh").value = meta?.refresh || "";
+  document.getElementById("metaDesc").value = meta?.description || "";
+
+  document.getElementById("metaOverlay").classList.add("show");
+}
+
+function closeMeta() {
+  document.getElementById("metaOverlay").classList.remove("show");
+}
+
+async function saveMetadata() {
+  metadataLog[currentMetaTable] = {
+    owner: document.getElementById("metaOwner").value,
+    refresh: document.getElementById("metaRefresh").value,
+    description: document.getElementById("metaDesc").value,
+    updated_at: new Date().toLocaleString()
+  };
+
+  alert("Metadata saved locally. Now we will save to GitHub in next step.");
+  closeMeta();
+}
 
 
 
