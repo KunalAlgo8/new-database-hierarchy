@@ -25,16 +25,16 @@
     },
     "fields": [
       {
-        "field": "",
+        "field": "abc",
         "datatype": "",
         "meaning": "",
         "nullable": "No",
         "pk": "No",
         "pii": "No",
-        "values": "",
+        "values": "123",
         "example": ""
       }
     ],
-    "updated_at": "12/01/2026, 15:05:38"
+    "updated_at": "12/01/2026, 15:06:37"
   }
 }
