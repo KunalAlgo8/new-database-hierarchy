@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -726,6 +725,94 @@
             background: #4DA3FF;
         }
 
+        /* Field Metadata Table Fix */
+        #tab-fields table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #tab-fields th,
+        #tab-fields td {
+            border: 1px solid #252A3A;
+            padding: 8px;
+            font-size: 12px;
+            color: #E6EAF2;
+        }
+
+        #tab-fields th {
+            background: #161A23;
+            font-weight: 600;
+        }
+
+        #tab-fields input,
+        #tab-fields select {
+            width: 100%;
+            background: #0F1117;
+            color: #E6EAF2;
+            border: 1px solid #252A3A;
+            padding: 6px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        .meta-tab {
+            display: none;
+        }
+
+        .meta-tab.active {
+            display: block;
+        }
+
+        .meta-tab input,
+        .meta-tab textarea,
+        .meta-tab select {
+            width: 100%;
+            background: #161A23;
+            color: #E6EAF2;
+            border: 1px solid #252A3A;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .meta-tab textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .tab-buttons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #252A3A;
+            padding-bottom: 12px;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            background: #161A23;
+            color: #9AA4BF;
+            border: 1px solid #252A3A;
+            border-radius: 6px 6px 0 0;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .tab-btn.active {
+            background: #4DA3FF;
+            color: white;
+            border-color: #4DA3FF;
+        }
+
+        .tab-btn:hover {
+            background: #252A3A;
+            color: #E6EAF2;
+        }
+
         @media (max-width: 768px) {
             .header {
                 padding: 24px;
@@ -762,35 +849,6 @@
                 padding: 20px;
             }
         }
-        /* ===== Field Metadata Table Fix ===== */
-#tab-fields table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-#tab-fields th,
-#tab-fields td {
-  border: 1px solid #252A3A;
-  padding: 6px;
-  font-size: 12px;
-  color: #E6EAF2;
-}
-
-#tab-fields th {
-  background: #161A23;
-  font-weight: 600;
-}
-
-#tab-fields input,
-#tab-fields select {
-  width: 100%;
-  background: #0F1117;
-  color: #E6EAF2;
-  border: 1px solid #252A3A;
-  padding: 4px;
-  font-size: 12px;
-}
-
     </style>
 </head>
 <body>
@@ -878,115 +936,106 @@
         </div>
     </div>
 
-    <div class="modal-overlay" id="metaOverlay">
-  <div class="modal" onclick="event.stopPropagation()">
-    <div class="modal-header">
-      <div class="modal-title">📝 Table Metadata</div>
-      <button class="modal-close" onclick="closeMeta()">×</button>
+    <!-- Metadata Edit Modal -->
+    <div class="modal-overlay" id="metaOverlay" onclick="closeMetaOverlay(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>📝</span>
+                    <span>Table Metadata</span>
+                </div>
+                <button class="modal-close" onclick="closeMeta()">×</button>
+            </div>
+            <div class="modal-body">
+                <!-- TAB HEADERS -->
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="switchMetaTab('machine')">🖥 Machine</button>
+                    <button class="tab-btn" onclick="switchMetaTab('table')">📊 Table</button>
+                    <button class="tab-btn" onclick="switchMetaTab('fields')">🧩 Fields</button>
+                </div>
+
+                <!-- MACHINE TAB -->
+                <div id="tab-machine" class="meta-tab active">
+                    <input id="m_machineName" placeholder="Machine Name" class="search-box">
+                    <input id="m_location" placeholder="Plant / Location" class="search-box">
+                    <input id="m_line" placeholder="Line / Section" class="search-box">
+                    <input id="m_owner" placeholder="Owner / Team" class="search-box">
+                    <input id="m_sourceType" placeholder="Source Type (PLC / MES / ERP)" class="search-box">
+                    <input id="m_refresh" placeholder="Refresh Frequency" class="search-box">
+                    <select id="m_criticality" class="search-box">
+                        <option value="">Criticality</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                    <textarea id="m_notes" placeholder="Description / Notes" class="search-box"></textarea>
+                </div>
+
+                <!-- TABLE TAB -->
+                <div id="tab-table" class="meta-tab">
+                    <input id="t_db" class="search-box" readonly>
+                    <input id="t_schema" class="search-box" readonly>
+                    <input id="t_table" class="search-box" readonly>
+                    <input id="t_purpose" placeholder="Business Purpose" class="search-box">
+                    <input id="t_owner" placeholder="Table Owner" class="search-box">
+                    <select id="t_updateType" class="search-box">
+                        <option value="">Update Type</option>
+                        <option>Full</option>
+                        <option>Incremental</option>
+                        <option>CDC</option>
+                    </select>
+                    <input id="t_refresh" placeholder="Refresh Frequency" class="search-box">
+                    <input id="t_retention" placeholder="Retention Period" class="search-box">
+                    <select id="t_sensitivity" class="search-box">
+                        <option value="">Data Sensitivity</option>
+                        <option>Public</option>
+                        <option>Internal</option>
+                        <option>Confidential</option>
+                    </select>
+                    <input id="t_updatedBy" placeholder="Last Updated By" class="search-box">
+                    <textarea id="t_desc" placeholder="Description" class="search-box"></textarea>
+                </div>
+
+                <!-- FIELDS TAB -->
+                <div id="tab-fields" class="meta-tab">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Type</th>
+                                <th>Meaning</th>
+                                <th>Nullable</th>
+                                <th>PK</th>
+                                <th>PII</th>
+                                <th>Values</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody id="fieldMetaBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <button class="btn btn-primary" onclick="saveMetadata()" style="margin-top: 20px;">💾 Save Metadata</button>
+            </div>
+        </div>
     </div>
 
-      <div class="modal-body">
-
-  <!-- TAB HEADERS -->
-  <div style="display:flex;gap:12px;margin-bottom:20px;">
-    <button class="btn btn-secondary" onclick="switchMetaTab('machine')">Machine</button>
-    <button class="btn btn-secondary" onclick="switchMetaTab('table')">Table</button>
-    <button class="btn btn-secondary" onclick="switchMetaTab('fields')">Fields</button>
-  </div>
-
-  <!-- ================= MACHINE TAB ================= -->
-  <div id="tab-machine" class="meta-tab">
-
-    <input id="m_machineName" placeholder="Machine Name" class="search-box"><br><br>
-    <input id="m_location" placeholder="Plant / Location" class="search-box"><br><br>
-    <input id="m_line" placeholder="Line / Section" class="search-box"><br><br>
-    <input id="m_owner" placeholder="Owner / Team" class="search-box"><br><br>
-
-    <input id="m_sourceType" placeholder="Source Type (PLC / MES / ERP)" class="search-box"><br><br>
-    <input id="m_refresh" placeholder="Refresh Frequency" class="search-box"><br><br>
-
-    <select id="m_criticality" class="search-box">
-      <option value="">Criticality</option>
-      <option>Low</option>
-      <option>Medium</option>
-      <option>High</option>
-    </select><br><br>
-
-    <textarea id="m_notes" placeholder="Description / Notes" class="search-box"></textarea>
-  </div>
-
-  <!-- ================= TABLE TAB ================= -->
-  <div id="tab-table" class="meta-tab" style="display:none;">
-
-    <input id="t_db" class="search-box" readonly><br><br>
-    <input id="t_schema" class="search-box" readonly><br><br>
-    <input id="t_table" class="search-box" readonly><br><br>
-
-    <input id="t_purpose" placeholder="Business Purpose" class="search-box"><br><br>
-    <input id="t_owner" placeholder="Table Owner" class="search-box"><br><br>
-
-    <select id="t_updateType" class="search-box">
-      <option value="">Update Type</option>
-      <option>Full</option>
-      <option>Incremental</option>
-      <option>CDC</option>
-    </select><br><br>
-
-    <input id="t_refresh" placeholder="Refresh Frequency" class="search-box"><br><br>
-    <input id="t_retention" placeholder="Retention Period" class="search-box"><br><br>
-
-    <select id="t_sensitivity" class="search-box">
-      <option value="">Data Sensitivity</option>
-      <option>Public</option>
-      <option>Internal</option>
-      <option>Confidential</option>
-    </select><br><br>
-
-    <input id="t_updatedBy" placeholder="Last Updated By" class="search-box"><br><br>
-    <textarea id="t_desc" placeholder="Description" class="search-box"></textarea>
-  </div>
-
-  <!-- ================= FIELD TAB ================= -->
-  <div id="tab-fields" class="meta-tab" style="display:none;">
-
-    <table style="width:100%;border-collapse:collapse;">
-      <thead>
-        <tr>
-          <th>Field</th>
-          <th>Type</th>
-          <th>Meaning</th>
-          <th>Nullable</th>
-          <th>PK</th>
-          <th>PII</th>
-          <th>Values</th>
-          <th>Example</th>
-        </tr>
-      </thead>
-      <tbody id="fieldMetaBody">
-      </tbody>
-    </table>
-
-  </div>
-
-  <br>
-  <button class="btn btn-primary" onclick="saveMetadata()">Save Metadata</button>
-</div>
-
-
-<!-- View Metadata Modal -->
-<div class="modal-overlay" id="viewMetaOverlay">
-  <div class="modal" onclick="event.stopPropagation()">
-    <div class="modal-header">
-      <div class="modal-title">👁️ View Metadata</div>
-      <button class="modal-close" onclick="closeViewMeta()">×</button>
+    <!-- View Metadata Modal -->
+    <div class="modal-overlay" id="viewMetaOverlay" onclick="closeViewMetaOverlay(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>👁️</span>
+                    <span>View Metadata</span>
+                </div>
+                <button class="modal-close" onclick="closeViewMeta()">×</button>
+            </div>
+            <div class="modal-body" id="viewMetaBody">
+            </div>
+        </div>
     </div>
-    <div class="modal-body" id="viewMetaBody">
-    </div>
-  </div>
-</div>
 
-
-    
     <script>
         let metadataLog = {};
         let currentMetaTable = "";
@@ -1378,30 +1427,30 @@
                 div.appendChild(copyBtn);
             }
 
-            const metaBtn = document.createElement('span');
-            metaBtn.className = 'copy-btn';
-            metaBtn.innerHTML = '📝';
-            metaBtn.title = 'Edit metadata';
-            metaBtn.onclick = (e) => {
-                e.stopPropagation();
-                openMetaForTable(li);
-            };
-            div.appendChild(metaBtn);
+            if (!isRoot && node.type === 'table') {
+                const metaBtn = document.createElement('span');
+                metaBtn.className = 'copy-btn';
+                metaBtn.innerHTML = '📝';
+                metaBtn.title = 'Edit metadata';
+                metaBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    openMetaForTable(li);
+                };
+                div.appendChild(metaBtn);
 
-            const viewBtn = document.createElement('span');
-            viewBtn.className = 'copy-btn';
-            viewBtn.innerHTML = '👁️';
-            viewBtn.title = 'View metadata';
-            viewBtn.style.display = 'none';   // hidden by default
-            viewBtn.onclick = (e) => {
-                e.stopPropagation();
-                viewMetadataForTable(li);
-            };
-            div.appendChild(viewBtn);
+                const viewBtn = document.createElement('span');
+                viewBtn.className = 'copy-btn';
+                viewBtn.innerHTML = '👁️';
+                viewBtn.title = 'View metadata';
+                viewBtn.style.display = 'none';
+                viewBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    viewMetadataForTable(li);
+                };
+                div.appendChild(viewBtn);
 
-// store ref so we can toggle later
-li._viewBtn = viewBtn;
-
+                li._viewBtn = viewBtn;
+            }
 
             const toggleIcon = document.createElement('span');
             toggleIcon.className = 'toggle-icon';
@@ -1758,9 +1807,314 @@ li._viewBtn = viewBtn;
             });
         }
 
+        // Metadata Functions
+        function switchMetaTab(tab) {
+            document.querySelectorAll('.meta-tab').forEach(t => {
+                t.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            const el = document.getElementById('tab-' + tab);
+            if (el) {
+                el.classList.add('active');
+            }
+
+            event.target.classList.add('active');
+        }
+
+        function openMetaForTable(treeItem) {
+            const pathArr = getNodePath(treeItem);
+            const key = pathArr.join(".");
+            currentMetaTable = key;
+
+            document.getElementById("t_db").value = pathArr[0] || "";
+            document.getElementById("t_schema").value = pathArr[pathArr.length-2] || "";
+            document.getElementById("t_table").value = pathArr[pathArr.length-1] || "";
+
+            document.querySelectorAll('#metaOverlay input:not([readonly]), #metaOverlay textarea, #metaOverlay select')
+                .forEach(el => { el.value = ""; });
+
+            const meta = metadataLog[key];
+            if (meta) {
+                document.getElementById("m_machineName").value = meta.machine?.name || "";
+                document.getElementById("m_location").value = meta.machine?.location || "";
+                document.getElementById("m_line").value = meta.machine?.line || "";
+                document.getElementById("m_owner").value = meta.machine?.owner || "";
+                document.getElementById("m_sourceType").value = meta.machine?.sourceType || "";
+                document.getElementById("m_refresh").value = meta.machine?.refresh || "";
+                document.getElementById("m_criticality").value = meta.machine?.criticality || "";
+                document.getElementById("m_notes").value = meta.machine?.notes || "";
+
+                document.getElementById("t_purpose").value = meta.table?.purpose || "";
+                document.getElementById("t_owner").value = meta.table?.owner || "";
+                document.getElementById("t_updateType").value = meta.table?.updateType || "";
+                document.getElementById("t_refresh").value = meta.table?.refresh || "";
+                document.getElementById("t_retention").value = meta.table?.retention || "";
+                document.getElementById("t_sensitivity").value = meta.table?.sensitivity || "";
+                document.getElementById("t_updatedBy").value = meta.table?.updatedBy || "";
+                document.getElementById("t_desc").value = meta.table?.description || "";
+
+                renderFieldRows(meta.fields || []);
+            } else {
+                renderFieldRows([]);
+            }
+
+            switchMetaTab('machine');
+            document.getElementById("metaOverlay").classList.add("show");
+        }
+
+        function renderFieldRows(fields) {
+            const body = document.getElementById("fieldMetaBody");
+            body.innerHTML = "";
+
+            if (!fields.length) {
+                for (let i = 0; i < 5; i++) addEmptyFieldRow();
+            } else {
+                fields.forEach(f => addFieldRow(f));
+            }
+        }
+
+        function addEmptyFieldRow() {
+            addFieldRow({});
+        }
+
+        function addFieldRow(f) {
+            const body = document.getElementById("fieldMetaBody");
+
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td><input value="${f.field || ""}"></td>
+                <td><input value="${f.datatype || ""}"></td>
+                <td><input value="${f.meaning || ""}"></td>
+                <td><select><option>No</option><option ${f.nullable==="Yes"?"selected":""}>Yes</option></select></td>
+                <td><select><option>No</option><option ${f.pk==="Yes"?"selected":""}>Yes</option></select></td>
+                <td><select><option>No</option><option ${f.pii==="Yes"?"selected":""}>Yes</option></select></td>
+                <td><input value="${f.values || ""}"></td>
+                <td><input value="${f.example || ""}"></td>
+            `;
+            body.appendChild(tr);
+        }
+
+        function closeMeta() {
+            document.getElementById("metaOverlay").classList.remove("show");
+        }
+
+        function closeMetaOverlay(event) {
+            if (event && event.target !== document.getElementById('metaOverlay')) {
+                return;
+            }
+            closeMeta();
+        }
+
+        async function saveMetadata() {
+            const key = currentMetaTable;
+
+            const machine = {
+                name: document.getElementById("m_machineName").value,
+                location: document.getElementById("m_location").value,
+                line: document.getElementById("m_line").value,
+                owner: document.getElementById("m_owner").value,
+                sourceType: document.getElementById("m_sourceType").value,
+                refresh: document.getElementById("m_refresh").value,
+                criticality: document.getElementById("m_criticality").value,
+                notes: document.getElementById("m_notes").value
+            };
+
+            const table = {
+                database: document.getElementById("t_db").value,
+                schema: document.getElementById("t_schema").value,
+                table: document.getElementById("t_table").value,
+                purpose: document.getElementById("t_purpose").value,
+                owner: document.getElementById("t_owner").value,
+                updateType: document.getElementById("t_updateType").value,
+                refresh: document.getElementById("t_refresh").value,
+                retention: document.getElementById("t_retention").value,
+                sensitivity: document.getElementById("t_sensitivity").value,
+                updatedBy: document.getElementById("t_updatedBy").value,
+                description: document.getElementById("t_desc").value
+            };
+
+            const fields = [];
+            document.querySelectorAll("#fieldMetaBody tr").forEach(tr => {
+                const tds = tr.querySelectorAll("input,select");
+                fields.push({
+                    field: tds[0].value,
+                    datatype: tds[1].value,
+                    meaning: tds[2].value,
+                    nullable: tds[3].value,
+                    pk: tds[4].value,
+                    pii: tds[5].value,
+                    values: tds[6].value,
+                    example: tds[7].value
+                });
+            });
+
+            metadataLog[key] = {
+                machine,
+                table,
+                fields,
+                updated_at: new Date().toLocaleString()
+            };
+
+            try {
+                await saveToGitHub(metadataLog);
+                alert("Metadata saved successfully ✅");
+                updateMetadataButtons();
+                closeMeta();
+            } catch (e) {
+                alert("Failed to save metadata ❌");
+                console.error(e);
+            }
+        }
+
+        async function saveToGitHub(data) {
+            const apiUrl = `https://api.github.com/repos/${GITHUB_USER}/${REPO_NAME}/contents/${FILE_PATH}`;
+
+            const token = prompt("Enter your GitHub token to save metadata:");
+            if (!token) throw new Error("Token missing");
+
+            let sha = null;
+
+            const existing = await fetch(apiUrl, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    Accept: "application/vnd.github+json"
+                }
+            });
+
+            if (existing.ok) {
+                const j = await existing.json();
+                sha = j.sha;
+            }
+
+            const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+
+            const res = await fetch(apiUrl, {
+                method: "PUT",
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    Accept: "application/vnd.github+json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: `Update metadata for ${currentMetaTable}`,
+                    content: content,
+                    sha: sha,
+                    branch: BRANCH
+                })
+            });
+
+            if (!res.ok) {
+                const err = await res.text();
+                throw new Error(err);
+            }
+        }
+
+        function viewMetadataForTable(treeItem) {
+            const path = getNodePath(treeItem).join(".");
+            const meta = metadataLog[path];
+
+            if (!meta) {
+                alert("No metadata found for this table.");
+                return;
+            }
+
+            const body = document.getElementById("viewMetaBody");
+
+            body.innerHTML = `
+                <p style="font-size: 16px; margin-bottom: 20px;"><b>Table:</b> ${path}</p>
+
+                <h3 style="color: #4DA3FF; margin-top: 20px; margin-bottom: 10px;">🖥 Machine</h3>
+                <p><b>Name:</b> ${meta.machine?.name || "-"}</p>
+                <p><b>Location:</b> ${meta.machine?.location || "-"}</p>
+                <p><b>Line:</b> ${meta.machine?.line || "-"}</p>
+                <p><b>Owner:</b> ${meta.machine?.owner || "-"}</p>
+                <p><b>Source Type:</b> ${meta.machine?.sourceType || "-"}</p>
+                <p><b>Refresh:</b> ${meta.machine?.refresh || "-"}</p>
+                <p><b>Criticality:</b> ${meta.machine?.criticality || "-"}</p>
+                <p><b>Notes:</b> ${meta.machine?.notes || "-"}</p>
+
+                <h3 style="color: #4DA3FF; margin-top: 20px; margin-bottom: 10px;">📊 Table</h3>
+                <p><b>Purpose:</b> ${meta.table?.purpose || "-"}</p>
+                <p><b>Owner:</b> ${meta.table?.owner || "-"}</p>
+                <p><b>Update Type:</b> ${meta.table?.updateType || "-"}</p>
+                <p><b>Refresh:</b> ${meta.table?.refresh || "-"}</p>
+                <p><b>Retention:</b> ${meta.table?.retention || "-"}</p>
+                <p><b>Sensitivity:</b> ${meta.table?.sensitivity || "-"}</p>
+                <p><b>Updated By:</b> ${meta.table?.updatedBy || "-"}</p>
+                <p><b>Description:</b> ${meta.table?.description || "-"}</p>
+
+                <h3 style="color: #4DA3FF; margin-top: 20px; margin-bottom: 10px;">🧩 Fields</h3>
+                <table style="width:100%;border-collapse:collapse; margin-top: 10px;">
+                    <tr style="background: #161A23;">
+                        <th style="border: 1px solid #252A3A; padding: 8px; text-align: left;">Field</th>
+                        <th style="border: 1px solid #252A3A; padding: 8px; text-align: left;">Type</th>
+                        <th style="border: 1px solid #252A3A; padding: 8px; text-align: left;">Meaning</th>
+                        <th style="border: 1px solid #252A3A; padding: 8px; text-align: left;">Nullable</th>
+                        <th style="border: 1px solid #252A3A; padding: 8px; text-align: left;">PK</th>
+                    </tr>
+                    ${meta.fields.map(f => `
+                        <tr>
+                            <td style="border: 1px solid #252A3A; padding: 8px;">${f.field || "-"}</td>
+                            <td style="border: 1px solid #252A3A; padding: 8px;">${f.datatype || "-"}</td>
+                            <td style="border: 1px solid #252A3A; padding: 8px;">${f.meaning || "-"}</td>
+                            <td style="border: 1px solid #252A3A; padding: 8px;">${f.nullable || "-"}</td>
+                            <td style="border: 1px solid #252A3A; padding: 8px;">${f.pk || "-"}</td>
+                        </tr>
+                    `).join("")}
+                </table>
+
+                <p style="margin-top: 20px; color: #9AA4BF;"><b>Last Updated:</b> ${meta.updated_at}</p>
+            `;
+
+            document.getElementById("viewMetaOverlay").classList.add("show");
+        }
+
+        function closeViewMeta() {
+            document.getElementById("viewMetaOverlay").classList.remove("show");
+        }
+
+        function closeViewMetaOverlay(event) {
+            if (event && event.target !== document.getElementById('viewMetaOverlay')) {
+                return;
+            }
+            closeViewMeta();
+        }
+
+        async function loadMetadataLog() {
+            const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${FILE_PATH}`;
+            try {
+                const res = await fetch(url);
+                metadataLog = await res.json();
+                setTimeout(updateMetadataButtons, 300);
+            } catch (e) {
+                console.warn("No metadata log found yet");
+                metadataLog = {};
+            }
+        }
+
+        function updateMetadataButtons() {
+            document.querySelectorAll('.tree-item').forEach(item => {
+                if (!item._viewBtn) return;
+
+                const path = getNodePath(item).join(".");
+
+                if (metadataLog[path]) {
+                    item._viewBtn.style.display = "flex";
+                } else {
+                    item._viewBtn.style.display = "none";
+                }
+            });
+        }
+
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeModal();
+                closeMeta();
+                closeViewMeta();
             }
             if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
                 e.preventDefault();
@@ -1768,310 +2122,11 @@ li._viewBtn = viewBtn;
             }
         });
 
-        async function loadMetadataLog() {
-          const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${FILE_PATH}`;
-          try {
-            const res = await fetch(url);
-            metadataLog = await res.json();
-
-            // 👇 ADD THIS LINE
-            setTimeout(updateMetadataButtons, 300);
-
-          } catch (e) {
-            console.warn("No metadata log found yet");
-            metadataLog = {};
-          }
-        }
-        function updateMetadataButtons() {
-  document.querySelectorAll('.tree-item').forEach(item => {
-    if (!item._viewBtn) return;
-
-    const path = getNodePath(item).join(".");
-
-    if (metadataLog[path]) {
-      item._viewBtn.style.display = "flex";   // show 👁️
-    } else {
-      item._viewBtn.style.display = "none";
-    }
-  });
-}
-
-
-
         document.addEventListener('DOMContentLoaded', () => {
             initializeTree();
             initializeTooltips();
-            loadMetadataLog();   // 👈 add this line
+            loadMetadataLog();
         });
-
-        function switchMetaTab(tab) {
-  // hide all tabs
-  document.querySelectorAll('.meta-tab').forEach(t => {
-    t.style.display = 'none';
-  });
-
-  // show selected tab (safe check)
-  const el = document.getElementById('tab-' + tab);
-  if (el) {
-    el.style.display = 'block';
-  } else {
-    console.warn('Tab not found:', 'tab-' + tab);
-  }
-}
-
-
-    function openMetaForTable(treeItem) {
-  const pathArr = getNodePath(treeItem);
-  const key = pathArr.join(".");
-  currentMetaTable = key;
-
-  document.getElementById("metaTableName").innerText = key;
-
-  // ----------- TABLE AUTO FILL -----------
-  document.getElementById("t_db").value = pathArr[0] || "";
-  document.getElementById("t_schema").value = pathArr[pathArr.length-2] || "";
-  document.getElementById("t_table").value = pathArr[pathArr.length-1] || "";
-
-  // ----------- CLEAR ALL USER FIELDS -----------
-  document.querySelectorAll('#metaOverlay input, #metaOverlay textarea, #metaOverlay select')
-    .forEach(el => { if (!el.readOnly) el.value = ""; });
-
-  // ----------- LOAD EXISTING METADATA (IF ANY) -----------
-  const meta = metadataLog[key];
-  if (meta) {
-    Object.assign(document.getElementById("m_machineName"), { value: meta.machine?.name || "" });
-    Object.assign(document.getElementById("m_location"), { value: meta.machine?.location || "" });
-    Object.assign(document.getElementById("m_line"), { value: meta.machine?.line || "" });
-    Object.assign(document.getElementById("m_owner"), { value: meta.machine?.owner || "" });
-    Object.assign(document.getElementById("m_sourceType"), { value: meta.machine?.sourceType || "" });
-    Object.assign(document.getElementById("m_refresh"), { value: meta.machine?.refresh || "" });
-    Object.assign(document.getElementById("m_criticality"), { value: meta.machine?.criticality || "" });
-    Object.assign(document.getElementById("m_notes"), { value: meta.machine?.notes || "" });
-
-    Object.assign(document.getElementById("t_purpose"), { value: meta.table?.purpose || "" });
-    Object.assign(document.getElementById("t_owner"), { value: meta.table?.owner || "" });
-    Object.assign(document.getElementById("t_updateType"), { value: meta.table?.updateType || "" });
-    Object.assign(document.getElementById("t_refresh"), { value: meta.table?.refresh || "" });
-    Object.assign(document.getElementById("t_retention"), { value: meta.table?.retention || "" });
-    Object.assign(document.getElementById("t_sensitivity"), { value: meta.table?.sensitivity || "" });
-    Object.assign(document.getElementById("t_updatedBy"), { value: meta.table?.updatedBy || "" });
-    Object.assign(document.getElementById("t_desc"), { value: meta.table?.description || "" });
-
-    renderFieldRows(meta.fields || []);
-  } else {
-    renderFieldRows([]);
-  }
-
-  switchMetaTab('machine');
-  const overlay = document.getElementById("metaOverlay");
-if (!overlay) {
-  alert("Metadata panel not found in HTML");
-  return;
-}
-overlay.classList.add("show");
-
-}
-
-        function renderFieldRows(fields) {
-  const body = document.getElementById("fieldMetaBody");
-  body.innerHTML = "";
-
-  if (!fields.length) {
-    // create 5 empty rows by default
-    for (let i = 0; i < 5; i++) addEmptyFieldRow();
-  } else {
-    fields.forEach(f => addFieldRow(f));
-  }
-}
-
-function addEmptyFieldRow() {
-  addFieldRow({});
-}
-
-function addFieldRow(f) {
-  const body = document.getElementById("fieldMetaBody");
-
-  const tr = document.createElement("tr");
-  tr.innerHTML = `
-    <td><input value="${f.field || ""}"></td>
-    <td><input value="${f.datatype || ""}"></td>
-    <td><input value="${f.meaning || ""}"></td>
-    <td><select><option>No</option><option ${f.nullable==="Yes"?"selected":""}>Yes</option></select></td>
-    <td><select><option>No</option><option ${f.pk==="Yes"?"selected":""}>Yes</option></select></td>
-    <td><select><option>No</option><option ${f.pii==="Yes"?"selected":""}>Yes</option></select></td>
-    <td><input value="${f.values || ""}"></td>
-    <td><input value="${f.example || ""}"></td>
-  `;
-  body.appendChild(tr);
-}
-
-
-function closeMeta() {
-  document.getElementById("metaOverlay").classList.remove("show");
-}
-
-async function saveMetadata() {
-
-  const key = currentMetaTable;
-
-  const machine = {
-    name: document.getElementById("m_machineName").value,
-    location: document.getElementById("m_location").value,
-    line: document.getElementById("m_line").value,
-    owner: document.getElementById("m_owner").value,
-    sourceType: document.getElementById("m_sourceType").value,
-    refresh: document.getElementById("m_refresh").value,
-    criticality: document.getElementById("m_criticality").value,
-    notes: document.getElementById("m_notes").value
-  };
-
-  const table = {
-    database: document.getElementById("t_db").value,
-    schema: document.getElementById("t_schema").value,
-    table: document.getElementById("t_table").value,
-    purpose: document.getElementById("t_purpose").value,
-    owner: document.getElementById("t_owner").value,
-    updateType: document.getElementById("t_updateType").value,
-    refresh: document.getElementById("t_refresh").value,
-    retention: document.getElementById("t_retention").value,
-    sensitivity: document.getElementById("t_sensitivity").value,
-    updatedBy: document.getElementById("t_updatedBy").value,
-    description: document.getElementById("t_desc").value
-  };
-
-  const fields = [];
-  document.querySelectorAll("#fieldMetaBody tr").forEach(tr => {
-    const tds = tr.querySelectorAll("input,select");
-    fields.push({
-      field: tds[0].value,
-      datatype: tds[1].value,
-      meaning: tds[2].value,
-      nullable: tds[3].value,
-      pk: tds[4].value,
-      pii: tds[5].value,
-      values: tds[6].value,
-      example: tds[7].value
-    });
-  });
-
-  metadataLog[key] = {
-    machine,
-    table,
-    fields,
-    updated_at: new Date().toLocaleString()
-  };
-
-  try {
-    await saveToGitHub(metadataLog);
-    alert("Metadata saved successfully ✅");
-    updateMetadataButtons();
-  } catch (e) {
-    alert("Failed to save metadata ❌");
-    console.error(e);
-  }
-
-  closeMeta();
-}
-
-
-async function saveToGitHub(data) {
-  const apiUrl = `https://api.github.com/repos/${GITHUB_USER}/${REPO_NAME}/contents/${FILE_PATH}`;
-
-  const token = prompt("Enter your GitHub token to save metadata:");
-  if (!token) throw new Error("Token missing");
-
-  let sha = null;
-
-  const existing = await fetch(apiUrl, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github+json"
-    }
-  });
-
-  if (existing.ok) {
-    const j = await existing.json();
-    sha = j.sha;
-  }
-
-  const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
-
-  const res = await fetch(apiUrl, {
-    method: "PUT",
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github+json",
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      message: `Update metadata for ${currentMetaTable}`,
-      content: content,
-      sha: sha,
-      branch: BRANCH
-    })
-  });
-
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(err);
-  }
-}
-
-function viewMetadataForTable(treeItem) {
-  const path = getNodePath(treeItem).join(".");
-  const meta = metadataLog[path];
-
-  if (!meta) {
-    alert("No metadata found for this table.");
-    return;
-  }
-
-  const body = document.getElementById("viewMetaBody");
-
-  body.innerHTML = `
-    <p><b>Table:</b> ${path}</p><br>
-
-    <h3>🖥 Machine</h3>
-    <p><b>Name:</b> ${meta.machine?.name || "-"}</p>
-    <p><b>Location:</b> ${meta.machine?.location || "-"}</p>
-    <p><b>Line:</b> ${meta.machine?.line || "-"}</p>
-    <p><b>Owner:</b> ${meta.machine?.owner || "-"}</p>
-
-    <h3>📊 Table</h3>
-    <p><b>Purpose:</b> ${meta.table?.purpose || "-"}</p>
-    <p><b>Owner:</b> ${meta.table?.owner || "-"}</p>
-    <p><b>Update Type:</b> ${meta.table?.updateType || "-"}</p>
-    <p><b>Sensitivity:</b> ${meta.table?.sensitivity || "-"}</p>
-
-    <h3>🧩 Fields</h3>
-    <table style="width:100%;border-collapse:collapse;">
-      <tr>
-        <th>Field</th><th>Type</th><th>Meaning</th>
-      </tr>
-      ${meta.fields.map(f => `
-        <tr>
-          <td>${f.field}</td>
-          <td>${f.datatype}</td>
-          <td>${f.meaning}</td>
-        </tr>
-      `).join("")}
-    </table>
-
-    <br>
-    <p><b>Last Updated:</b> ${meta.updated_at}</p>
-  `;
-
-  document.getElementById("viewMetaOverlay").classList.add("show");
-}
-
-function closeViewMeta() {
-  document.getElementById("viewMetaOverlay").classList.remove("show");
-}
-
-
-
     </script>
-<!-- Metadata Modal -->
-    
 </body>
 </html>
