@@ -1,1 +1,80 @@
-{}
+{
+  "mes.smartgateplus.dbo.setup_change_data": {
+    "machine": {
+      "name": "kkn",
+      "location": "",
+      "line": "",
+      "owner": "",
+      "sourceType": "",
+      "refresh": "",
+      "criticality": "",
+      "notes": ""
+    },
+    "table": {
+      "database": "mes",
+      "schema": "dbo",
+      "table": "setup_change_data",
+      "purpose": "",
+      "owner": "",
+      "updateType": "",
+      "refresh": "",
+      "retention": "",
+      "sensitivity": "",
+      "updatedBy": "",
+      "description": ""
+    },
+    "fields": [
+      {
+        "field": "",
+        "datatype": "",
+        "meaning": "",
+        "nullable": "No",
+        "pk": "No",
+        "pii": "No",
+        "values": "",
+        "example": ""
+      },
+      {
+        "field": "",
+        "datatype": "",
+        "meaning": "",
+        "nullable": "No",
+        "pk": "No",
+        "pii": "No",
+        "values": "",
+        "example": ""
+      },
+      {
+        "field": "",
+        "datatype": "",
+        "meaning": "",
+        "nullable": "No",
+        "pk": "No",
+        "pii": "No",
+        "values": "",
+        "example": ""
+      },
+      {
+        "field": "",
+        "datatype": "",
+        "meaning": "",
+        "nullable": "No",
+        "pk": "No",
+        "pii": "No",
+        "values": "",
+        "example": ""
+      },
+      {
+        "field": "",
+        "datatype": "",
+        "meaning": "",
+        "nullable": "No",
+        "pk": "No",
+        "pii": "No",
+        "values": "",
+        "example": ""
+      }
+    ],
+    "updated_at": "12/01/2026, 13:49:46"
+  }
+}
