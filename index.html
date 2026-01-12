@@ -1659,9 +1659,17 @@ async function saveMetadata() {
     updated_at: new Date().toLocaleString()
   };
 
-  alert("Metadata saved locally. Now we will save to GitHub in next step.");
+  try {
+    await saveToGitHub(metadataLog);
+    alert("Metadata saved to GitHub logbook ✅");
+  } catch (e) {
+    console.error(e);
+    alert("Failed to save to GitHub ❌. Check token & permissions.");
+  }
+
   closeMeta();
 }
+
 
 
 
