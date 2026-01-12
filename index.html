@@ -1489,7 +1489,9 @@
             const div = document.createElement('div');
             div.className = 'tree-content';
             
+            // Only add action buttons for tables in the tree
             if (!isRoot && node.type === 'table') {
+                // Copy button
                 const copyBtn = document.createElement('span');
                 copyBtn.className = 'copy-btn';
                 copyBtn.innerHTML = '📋';
@@ -1499,9 +1501,8 @@
                     copyPathToClipboard(li);
                 };
                 div.appendChild(copyBtn);
-            }
 
-            if (!isRoot && node.type === 'table') {
+                // Edit metadata button
                 const metaBtn = document.createElement('span');
                 metaBtn.className = 'copy-btn';
                 metaBtn.innerHTML = '📝';
@@ -1512,6 +1513,7 @@
                 };
                 div.appendChild(metaBtn);
 
+                // View metadata button (hidden by default, shown only when metadata exists)
                 const viewBtn = document.createElement('span');
                 viewBtn.className = 'copy-btn';
                 viewBtn.innerHTML = '👁️';
@@ -1523,6 +1525,7 @@
                 };
                 div.appendChild(viewBtn);
 
+                // Store reference for later updates
                 li._viewBtn = viewBtn;
             }
 
@@ -1562,31 +1565,10 @@
                 const ul = document.createElement('ul');
                 ul.className = 'children';
                 
-                if (node.children.length === 0 && node.name === 'sap') {
-                    const emptyLi = document.createElement('li');
-                    emptyLi.className = 'tree-item';
-                    const emptyDiv = document.createElement('div');
-                    emptyDiv.className = 'tree-content';
-                    emptyDiv.innerHTML = '<span class="toggle-icon"></span><span class="icon">ℹ️</span><span class="label">No schemas/tables defined</span>';
-                    emptyLi.appendChild(emptyDiv);
-                    ul.appendChild(emptyLi);
-                } else {
-                    node.children.forEach(child => {
-                        ul.appendChild(createTreeNode(child));
-                    });
-                }
+                node.children.forEach(child => {
+                    ul.appendChild(createTreeNode(child));
+                });
                 
-                li.appendChild(ul);
-            } else if (node.name === 'sap') {
-                const ul = document.createElement('ul');
-                ul.className = 'children';
-                const emptyLi = document.createElement('li');
-                emptyLi.className = 'tree-item';
-                const emptyDiv = document.createElement('div');
-                emptyDiv.className = 'tree-content';
-                emptyDiv.innerHTML = '<span class="toggle-icon"></span><span class="icon">ℹ️</span><span class="label">No schemas/tables defined</span>';
-                emptyLi.appendChild(emptyDiv);
-                ul.appendChild(emptyLi);
                 li.appendChild(ul);
             }
 
@@ -2183,6 +2165,7 @@
         }
 
         function updateMetadataButtons() {
+            // Only update view buttons in the tree hierarchy
             document.querySelectorAll('.tree-item').forEach(item => {
                 if (!item._viewBtn) return;
 
