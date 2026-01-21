@@ -42,7 +42,7 @@
                 ]
               }
             ]
-          }
+          },
         {
           "name": "smartiiotqa",
           "type": "sub-database",
