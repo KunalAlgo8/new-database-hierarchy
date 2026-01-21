@@ -1,6 +1,6 @@
                 {
                     name: "mes",
-                    type: "main-database",
+                    type: "root",
                     children: [
                         {
                             name: "smartgateplus",
@@ -512,7 +512,7 @@
                                 { name: "i_productionconsuption", type: "table" },
                                 { name: "o_production", type: "table" }
                             ]
-                            },
+                            }
                             ]
                         }
                     ]
