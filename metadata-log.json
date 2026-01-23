@@ -1,33 +1,40 @@
 {
   "mes.smartgateplus.dbo.setup_change_data": {
     "machine": {
-      "name": "",
-      "location": "",
-      "owner": "",
-      "sourceType": "",
-      "refresh": ""
+      "name": "SetupMachine_01",
+      "location": "Plant-1 / Line-A",
+      "owner": "Production Team",
+      "sourceType": "PLC",
+      "refresh": "Every 5 minutes"
     },
     "table": {
       "database": "mes",
       "schema": "dbo",
       "table": "setup_change_data",
-      "description": "",
-      "users": ""
+      "description": "Stores machine setup change parameters",
+      "users": "MES, Production, Quality"
     },
     "fields": [
       {
-        "field": "abc",
-        "datatype": "",
-        "meaning": "plant",
+        "field": "plant_id",
+        "datatype": "int",
+        "meaning": "Plant Identifier",
         "nullable": "No",
         "value": "123"
       },
       {
-        "field": "kunal",
-        "datatype": "kunal",
-        "meaning": "kunal",
+        "field": "machine_name",
+        "datatype": "varchar(50)",
+        "meaning": "Name of the machine",
         "nullable": "No",
-        "value": ""
+        "value": "TBM-01"
+      },
+      {
+        "field": "setup_time",
+        "datatype": "datetime",
+        "meaning": "Setup change timestamp",
+        "nullable": "Yes",
+        "value": "2026-01-21 15:30:00"
       }
     ],
     "updated_at": "21/01/2026, 15:35:49"
