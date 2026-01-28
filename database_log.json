@@ -16,19 +16,23 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:32+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:22:32+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:57:22+00:00"
                                 },
                                 {
                                     "name": "o_production_log",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:53:29+00:00"
                                 }
                             ]
                         },
@@ -38,15 +42,18 @@
                             "children": [
                                 {
                                     "name": "bindosingevent",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:41:41+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:22+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:10+00:00"
                                 }
                             ]
                         },
@@ -56,11 +63,13 @@
                             "children": [
                                 {
                                     "name": "bindosingevent",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-21T14:28:19+00:00"
                                 },
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T09:29:28+00:00"
                                 }
                             ]
                         },
@@ -70,15 +79,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:36:23+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:31:10+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:05:37+00:00"
                                 }
                             ]
                         },
@@ -88,15 +100,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:00:19+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:10:17+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:12:00+00:00"
                                 }
                             ]
                         },
@@ -106,15 +121,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:37:35+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:42:24+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:43:06+00:00"
                                 }
                             ]
                         },
@@ -124,15 +142,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:43:22+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:57:26+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:35:49+00:00"
                                 }
                             ]
                         },
@@ -142,15 +163,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:28:16+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T09:44:48+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:12:01+00:00"
                                 }
                             ]
                         },
@@ -160,15 +184,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:34:51+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:44:06+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:45:49+00:00"
                                 }
                             ]
                         },
@@ -178,15 +205,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:35:45+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:40:49+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T07:37:22+00:00"
                                 }
                             ]
                         },
@@ -196,15 +226,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:50:17+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:36:01+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:58:10+00:00"
                                 }
                             ]
                         },
@@ -214,23 +247,28 @@
                             "children": [
                                 {
                                     "name": "lotquarantine",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:31:09+00:00"
                                 },
                                 {
                                     "name": "materialageupdate",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:42+00:00"
                                 },
                                 {
                                     "name": "mi_daily",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:07:36+00:00"
                                 },
                                 {
                                     "name": "mi_transactions",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:29:20+00:00"
                                 },
                                 {
                                     "name": "testproc",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:32+00:00"
                                 }
                             ]
                         },
@@ -240,43 +278,53 @@
                             "children": [
                                 {
                                     "name": "beadwirecountdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:50+00:00"
                                 },
                                 {
                                     "name": "bom",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-21T12:55:56+00:00"
                                 },
                                 {
                                     "name": "bufferfeedingeventdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T07:22:49+00:00"
                                 },
                                 {
                                     "name": "debugging",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:49+00:00"
                                 },
                                 {
                                     "name": "dieshop",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:22:56+00:00"
                                 },
                                 {
                                     "name": "feedingeventdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:31+00:00"
                                 },
                                 {
                                     "name": "tbmpcr_test",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:00+00:00"
                                 },
                                 {
                                     "name": "tempvmimaxx",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:05:28+00:00"
                                 },
                                 {
                                     "name": "testtriger",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:54:56+00:00"
                                 },
                                 {
                                     "name": "vmimaxx_logs",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:24+00:00"
                                 }
                             ]
                         },
@@ -286,15 +334,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:23:59+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:06:04+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:05:55+00:00"
                                 }
                             ]
                         },
@@ -304,15 +355,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:28:16+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:54:25+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:20:28+00:00"
                                 }
                             ]
                         },
@@ -322,15 +376,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:10:18+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:30+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:15:43+00:00"
                                 }
                             ]
                         },
@@ -340,15 +397,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:12:07+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:16:59+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T10:47:10+00:00"
                                 }
                             ]
                         },
@@ -358,15 +418,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-21T20:13:21+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:34:01+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:35:39+00:00"
                                 }
                             ]
                         },
@@ -376,15 +439,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:29:55+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:44:24+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:41:46+00:00"
                                 }
                             ]
                         },
@@ -394,15 +460,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:06:35+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:51:20+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:55:30+00:00"
                                 }
                             ]
                         },
@@ -412,15 +481,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:55:40+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:06:04+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:58:06+00:00"
                                 }
                             ]
                         },
@@ -430,15 +502,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:28:55+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:11:37+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:15:35+00:00"
                                 }
                             ]
                         },
@@ -448,15 +523,18 @@
                             "children": [
                                 {
                                     "name": "dosingeventdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:31:10+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:32+00:00"
                                 },
                                 {
                                     "name": "mixingproductionbooking",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:15:24+00:00"
                                 }
                             ]
                         },
@@ -466,11 +544,13 @@
                             "children": [
                                 {
                                     "name": "bookingdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:22+00:00"
                                 },
                                 {
                                     "name": "historydata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:49:47+00:00"
                                 }
                             ]
                         },
@@ -480,15 +560,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:19:33+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:50:39+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:53:32+00:00"
                                 }
                             ]
                         },
@@ -498,19 +581,23 @@
                             "children": [
                                 {
                                     "name": "dataparam",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T09:43:00+00:00"
                                 },
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:12+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:15:54+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:57:43+00:00"
                                 }
                             ]
                         },
@@ -520,11 +607,13 @@
                             "children": [
                                 {
                                     "name": "bindosingevent",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T09:44:48+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:04:03+00:00"
                                 }
                             ]
                         },
@@ -534,19 +623,23 @@
                             "children": [
                                 {
                                     "name": "bindosingevent",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:23:40+00:00"
                                 },
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:31:10+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:19:09+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:00+00:00"
                                 }
                             ]
                         },
@@ -556,19 +649,23 @@
                             "children": [
                                 {
                                     "name": "bindosingevent",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:49:48+00:00"
                                 },
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:53:23+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:22:33+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:49+00:00"
                                 }
                             ]
                         },
@@ -578,15 +675,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:52+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T09:44:19+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:55+00:00"
                                 }
                             ]
                         },
@@ -596,19 +696,23 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:13+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T09:45:59+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:20:20+00:00"
                                 },
                                 {
                                     "name": "productioneventdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T05:42:13+00:00"
                                 }
                             ]
                         },
@@ -618,11 +722,13 @@
                             "children": [
                                 {
                                     "name": "production_data_vmi_maxx_01",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-20T14:25:49+00:00"
                                 },
                                 {
                                     "name": "production_data_vmi_maxx_02",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-21T14:53:15+00:00"
                                 }
                             ]
                         },
@@ -632,15 +738,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:37:51+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:49+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:03+00:00"
                                 }
                             ]
                         },
@@ -650,15 +759,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:20:29+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:53+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:17:08+00:00"
                                 }
                             ]
                         },
@@ -668,15 +780,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:13:32+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:20+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:54:37+00:00"
                                 }
                             ]
                         },
@@ -686,15 +801,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:11:28+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:00:50+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:54:15+00:00"
                                 }
                             ]
                         },
@@ -704,15 +822,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:11:39+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T07:26:20+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-21T14:42:34+00:00"
                                 }
                             ]
                         },
@@ -722,15 +843,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T11:20:47+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:19:58+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:19:48+00:00"
                                 }
                             ]
                         },
@@ -740,15 +864,18 @@
                             "children": [
                                 {
                                     "name": "i_material",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:21:31+00:00"
                                 },
                                 {
                                     "name": "i_productionconsuption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:02+00:00"
                                 },
                                 {
                                     "name": "o_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:19:48+00:00"
                                 }
                             ]
                         }
@@ -764,11 +891,13 @@
                             "children": [
                                 {
                                     "name": "blockbarcodessenttosap",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T07:17:40+00:00"
                                 },
                                 {
                                     "name": "sfgproduction",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T07:39:25+00:00"
                                 }
                             ]
                         }
@@ -784,7 +913,8 @@
                             "children": [
                                 {
                                     "name": "generated_tickets",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T07:26:15+00:00"
                                 }
                             ]
                         },
@@ -794,11 +924,13 @@
                             "children": [
                                 {
                                     "name": "setup_change_data",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:35:37+00:00"
                                 },
                                 {
                                     "name": "utility_consumption",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:30:58+00:00"
                                 }
                             ]
                         },
@@ -808,15 +940,18 @@
                             "children": [
                                 {
                                     "name": "downtime_department",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T07:27:54+00:00"
                                 },
                                 {
                                     "name": "downtime_with_reason",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:35:54+00:00"
                                 },
                                 {
                                     "name": "dta_production_downtime",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T07:35:34+00:00"
                                 }
                             ]
                         },
@@ -826,7 +961,8 @@
                             "children": [
                                 {
                                     "name": "recipe_production",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:44:20+00:00"
                                 }
                             ]
                         }
@@ -842,19 +978,23 @@
                             "children": [
                                 {
                                     "name": "sap_rmissueackfromsap",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:33:56+00:00"
                                 },
                                 {
                                     "name": "tblbom",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-21T12:54:49+00:00"
                                 },
                                 {
                                     "name": "tblbomspecification",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-21T10:14:51+00:00"
                                 },
                                 {
                                     "name": "tblitemmaster",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T07:26:40+00:00"
                                 }
                             ]
                         }
@@ -870,187 +1010,233 @@
                             "children": [
                                 {
                                     "name": "bladderdetail",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-14T22:42:58+00:00"
                                 },
                                 {
                                     "name": "blockbarcodes",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:11+00:00"
                                 },
                                 {
                                     "name": "changerecipelog",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T09:44:52+00:00"
                                 },
                                 {
                                     "name": "curinglookup",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T05:21:26+00:00"
                                 },
                                 {
                                     "name": "curingncm",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:53:30+00:00"
                                 },
                                 {
                                     "name": "curingpcr",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T11:07:42+00:00"
                                 },
                                 {
                                     "name": "curingpcr06082024",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T05:15:28+00:00"
                                 },
                                 {
                                     "name": "curingpcrbufferbarcode",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:28:28+00:00"
                                 },
                                 {
                                     "name": "curingpcrremovedbarcode",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-18T17:14:39+00:00"
                                 },
                                 {
                                     "name": "curingpcrtempbarcode",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T11:29:38+00:00"
                                 },
                                 {
                                     "name": "curingproduction",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:31:11+00:00"
                                 },
                                 {
                                     "name": "curingproduction27dec2020",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T06:51:20+00:00"
                                 },
                                 {
                                     "name": "curingproduction27dec2020_temp",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T05:36:38+00:00"
                                 },
                                 {
                                     "name": "curingproduction_old",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T07:17:19+00:00"
                                 },
                                 {
                                     "name": "curingproductionbt14082023",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T07:16:04+00:00"
                                 },
                                 {
                                     "name": "dbmdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:14+00:00"
                                 },
                                 {
                                     "name": "firststagetbmmachine",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:50+00:00"
                                 },
                                 {
                                     "name": "paintingdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:19:51+00:00"
                                 },
                                 {
                                     "name": "paintingdatanew",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:02+00:00"
                                 },
                                 {
                                     "name": "paintingdatanew_backup",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T05:26:37+00:00"
                                 },
                                 {
                                     "name": "pcrdatatransfer",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:29:17+00:00"
                                 },
                                 {
                                     "name": "pcrvisualinspection",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:16+00:00"
                                 },
                                 {
                                     "name": "pressdowntime",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T06:12:41+00:00"
                                 },
                                 {
                                     "name": "productiondatapcrdbnew",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:30:03+00:00"
                                 },
                                 {
                                     "name": "productiondatatuo",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:37+00:00"
                                 },
                                 {
                                     "name": "productiondatatuonew",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:15:43+00:00"
                                 },
                                 {
                                     "name": "sap_curing_ack",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:28:48+00:00"
                                 },
                                 {
                                     "name": "sap_curing_confirmation",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:54+00:00"
                                 },
                                 {
                                     "name": "sap_employee_master",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-16T20:16:43+00:00"
                                 },
                                 {
                                     "name": "sap_scrap_ack",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T10:12:00+00:00"
                                 },
                                 {
                                     "name": "sap_scrap_confirmation",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:15+00:00"
                                 },
                                 {
                                     "name": "sap_tbm_ack",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:19:49+00:00"
                                 },
                                 {
                                     "name": "sap_tbm_confirmation",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:20:41+00:00"
                                 },
                                 {
                                     "name": "secondvidata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:27+00:00"
                                 },
                                 {
                                     "name": "secondvidatasap",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:57+00:00"
                                 },
                                 {
                                     "name": "shearographydata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:26:34+00:00"
                                 },
                                 {
                                     "name": "tbmgtclassification",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-22T06:35:04+00:00"
                                 },
                                 {
                                     "name": "tbmpcr",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-27T08:33:00+00:00"
                                 },
                                 {
                                     "name": "tbmpcr07052021",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T05:26:38+00:00"
                                 },
                                 {
                                     "name": "tbmpcr31aug22",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T07:36:26+00:00"
                                 },
                                 {
                                     "name": "tbmpcr_s2pv",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-16T07:20:09+00:00"
                                 },
                                 {
                                     "name": "tgisdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:18:48+00:00"
                                 },
                                 {
                                     "name": "tuodata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:15:14+00:00"
                                 },
                                 {
                                     "name": "vmimaxx",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:24:01+00:00"
                                 },
                                 {
                                     "name": "waveformdata",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-23T12:25:01+00:00"
                                 },
                                 {
                                     "name": "wcmaster",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-19T09:30:36+00:00"
                                 }
                             ]
                         }
@@ -1072,39 +1258,48 @@
                             "children": [
                                 {
                                     "name": "BOM_details",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-29T15:25:55+00:00"
                                 },
                                 {
                                     "name": "Man_Prod_Delay",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-02T07:26:28+00:00"
                                 },
                                 {
                                     "name": "Prod_Delay",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2026-01-02T07:28:17+00:00"
                                 },
                                 {
                                     "name": "machine_capacity",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-29T15:26:53+00:00"
                                 },
                                 {
                                     "name": "machine_cycle_time",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-29T15:28:22+00:00"
                                 },
                                 {
                                     "name": "man_master",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-29T15:29:10+00:00"
                                 },
                                 {
                                     "name": "material_master",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-29T15:30:11+00:00"
                                 },
                                 {
                                     "name": "mould_master",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-29T15:31:48+00:00"
                                 },
                                 {
                                     "name": "setup_changeover_time",
-                                    "type": "table"
+                                    "type": "table",
+                                    "lastFetched": "2025-12-29T15:33:36+00:00"
                                 }
                             ]
                         }
