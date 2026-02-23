@@ -1,7 +1,7 @@
 {
     "name": "Databases",
     "type": "root",
-    "lastScanTime": "2026-02-23T15:34:03.407019+00:00",
+    "lastScanTime": "2026-02-23T16:12:44.584611+00:00",
     "children": [
         {
             "name": "mes",
@@ -506,7 +506,7 @@
                                 {
                                     "name": "i_productionconsuption",
                                     "type": "table",
-                                    "lastFetched": "2026-02-16T10:38:44+00:00"
+                                    "lastFetched": "2026-02-23T15:39:25+00:00"
                                 },
                                 {
                                     "name": "o_production",
@@ -647,7 +647,7 @@
                                 {
                                     "name": "i_productionconsuption",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T06:02:56+00:00"
+                                    "lastFetched": "2026-02-23T15:44:57+00:00"
                                 },
                                 {
                                     "name": "o_production",
@@ -855,7 +855,7 @@
                                 {
                                     "name": "production_data_vmi_maxx_04",
                                     "type": "table",
-                                    "lastFetched": "2026-02-20T07:47:38+00:00"
+                                    "lastFetched": "2026-02-23T15:47:11+00:00"
                                 }
                             ]
                         },
@@ -1243,7 +1243,7 @@
                                 {
                                     "name": "dbmdata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-20T11:41:41+00:00"
+                                    "lastFetched": "2026-02-23T15:51:15+00:00"
                                 },
                                 {
                                     "name": "firststagetbmmachine",
@@ -1253,7 +1253,7 @@
                                 {
                                     "name": "paintingdata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-20T11:41:16+00:00"
+                                    "lastFetched": "2026-02-23T16:17:05+00:00"
                                 },
                                 {
                                     "name": "paintingdatanew",
@@ -1298,7 +1298,7 @@
                                 {
                                     "name": "sap_curing_ack",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T15:39:11+00:00"
+                                    "lastFetched": "2026-02-23T15:55:02+00:00"
                                 },
                                 {
                                     "name": "sap_curing_confirmation",
@@ -1333,7 +1333,7 @@
                                 {
                                     "name": "secondvidata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-20T11:41:33+00:00"
+                                    "lastFetched": "2026-02-23T16:18:22+00:00"
                                 },
                                 {
                                     "name": "secondvidatasap",
@@ -1343,7 +1343,7 @@
                                 {
                                     "name": "shearographydata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-16T16:17:24+00:00"
+                                    "lastFetched": "2026-02-23T15:47:31+00:00"
                                 },
                                 {
                                     "name": "tbmgtclassification",
