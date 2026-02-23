@@ -1,7 +1,7 @@
 {
     "name": "Databases",
     "type": "root",
-    "lastScanTime": "2026-02-23T22:06:51.116834+00:00",
+    "lastScanTime": "2026-02-23T22:46:15.484793+00:00",
     "children": [
         {
             "name": "mes",
@@ -38,7 +38,7 @@
                                 {
                                     "name": "productioneventdata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T22:06:59+00:00"
+                                    "lastFetched": "2026-02-23T22:44:24+00:00"
                                 }
                             ]
                         },
@@ -336,7 +336,7 @@
                                 {
                                     "name": "beadwirecountdata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T20:46:50+00:00"
+                                    "lastFetched": "2026-02-23T22:34:19+00:00"
                                 },
                                 {
                                     "name": "bom",
@@ -629,6 +629,11 @@
                                     "lastFetched": "2026-02-23T20:49:57+00:00"
                                 },
                                 {
+                                    "name": "i_material",
+                                    "type": "table",
+                                    "lastFetched": "2026-02-23T22:48:21+00:00"
+                                },
+                                {
                                     "name": "i_productionconsumption",
                                     "type": "table",
                                     "lastFetched": "2026-02-23T21:57:06+00:00"
@@ -746,7 +751,7 @@
                                 {
                                     "name": "o_production",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T22:09:12+00:00"
+                                    "lastFetched": "2026-02-23T22:20:12+00:00"
                                 }
                             ]
                         },
@@ -1349,7 +1354,7 @@
                                 {
                                     "name": "sap_scrap_ack",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T22:12:31+00:00"
+                                    "lastFetched": "2026-02-23T22:12:35+00:00"
                                 },
                                 {
                                     "name": "sap_scrap_confirmation",
