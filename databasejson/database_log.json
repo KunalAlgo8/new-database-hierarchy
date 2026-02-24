@@ -1,7 +1,7 @@
 {
     "name": "Databases",
     "type": "root",
-    "lastScanTime": "2026-02-23T23:25:37.919676+00:00",
+    "lastScanTime": "2026-02-24T00:05:04.711693+00:00",
     "children": [
         {
             "name": "mes",
@@ -631,7 +631,7 @@
                                 {
                                     "name": "i_material",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T23:27:46+00:00"
+                                    "lastFetched": "2026-02-24T00:07:21+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
