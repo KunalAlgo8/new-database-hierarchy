@@ -1,7 +1,7 @@
 {
     "name": "Databases",
     "type": "root",
-    "lastScanTime": "2026-02-24T01:24:45.105631+00:00",
+    "lastScanTime": "2026-02-24T02:04:25.786379+00:00",
     "children": [
         {
             "name": "mes",
@@ -631,7 +631,7 @@
                                 {
                                     "name": "i_material",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T01:27:14+00:00"
+                                    "lastFetched": "2026-02-24T02:07:07+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
@@ -1090,7 +1090,7 @@
                                 {
                                     "name": "sfgproduction",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T20:42:29+00:00"
+                                    "lastFetched": "2026-02-24T02:05:43+00:00"
                                 }
                             ]
                         }
@@ -1314,7 +1314,7 @@
                                 {
                                     "name": "pcrvisualinspection",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T20:53:33+00:00"
+                                    "lastFetched": "2026-02-24T02:05:00+00:00"
                                 },
                                 {
                                     "name": "pressdowntime",
