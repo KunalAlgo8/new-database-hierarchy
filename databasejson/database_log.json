@@ -1,7 +1,7 @@
 {
     "name": "Databases",
     "type": "root",
-    "lastScanTime": "2026-02-24T02:04:25.786379+00:00",
+    "lastScanTime": "2026-02-24T02:44:21.085169+00:00",
     "children": [
         {
             "name": "mes",
@@ -631,7 +631,7 @@
                                 {
                                     "name": "i_material",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T02:07:07+00:00"
+                                    "lastFetched": "2026-02-24T02:47:05+00:00"
                                 },
                                 {
                                     "name": "i_productionconsumption",
@@ -860,7 +860,7 @@
                                 {
                                     "name": "i_productionconsuption",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T20:48:52+00:00"
+                                    "lastFetched": "2026-02-24T02:48:34+00:00"
                                 },
                                 {
                                     "name": "o_production",
@@ -1090,7 +1090,7 @@
                                 {
                                     "name": "sfgproduction",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T02:05:43+00:00"
+                                    "lastFetched": "2026-02-24T02:31:26+00:00"
                                 }
                             ]
                         }
@@ -1279,7 +1279,7 @@
                                 {
                                     "name": "dbmdata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T20:53:56+00:00"
+                                    "lastFetched": "2026-02-24T02:31:27+00:00"
                                 },
                                 {
                                     "name": "firststagetbmmachine",
@@ -1379,7 +1379,7 @@
                                 {
                                     "name": "secondvidatasap",
                                     "type": "table",
-                                    "lastFetched": "2026-02-23T20:53:53+00:00"
+                                    "lastFetched": "2026-02-24T02:35:28+00:00"
                                 },
                                 {
                                     "name": "shearographydata",
