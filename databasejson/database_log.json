@@ -1,7 +1,7 @@
 {
     "name": "Databases",
     "type": "root",
-    "lastScanTime": "2026-02-25T11:16:39.793872+00:00",
+    "lastScanTime": "2026-02-25T11:57:23.894337+00:00",
     "children": [
         {
             "name": "mes",
@@ -101,7 +101,7 @@
                                 {
                                     "name": "i_productionconsuption",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T12:27:11+00:00"
+                                    "lastFetched": "2026-02-25T11:37:23+00:00"
                                 },
                                 {
                                     "name": "o_production",
@@ -579,7 +579,7 @@
                                 {
                                     "name": "i_productionconsuption",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T13:27:41+00:00"
+                                    "lastFetched": "2026-02-25T11:37:09+00:00"
                                 },
                                 {
                                     "name": "o_production",
@@ -657,7 +657,7 @@
                                 {
                                     "name": "bookingdata",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T13:27:22+00:00"
+                                    "lastFetched": "2026-02-25T11:37:23+00:00"
                                 },
                                 {
                                     "name": "historydata",
@@ -725,7 +725,7 @@
                                 {
                                     "name": "i_productionconsuption",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T13:21:56+00:00"
+                                    "lastFetched": "2026-02-25T11:37:25+00:00"
                                 },
                                 {
                                     "name": "o_production",
@@ -1369,7 +1369,7 @@
                                 {
                                     "name": "sap_tbm_ack",
                                     "type": "table",
-                                    "lastFetched": "2026-02-24T13:32:04+00:00"
+                                    "lastFetched": "2026-02-25T11:39:02+00:00"
                                 },
                                 {
                                     "name": "sap_tbm_confirmation",
